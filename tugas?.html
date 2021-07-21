@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Percabangan switch/case</title>
+</head>
+<body>
+    <script>
+
+        var jawab = prompt("Silahkan Memilih Angka Untuk Mendapatkan Hadiah 😄");
+        var hadiah = "";
+        
+        switch(jawab){
+            case "1":
+                hadiah = "Mobil toyota";
+                break;
+            case "2":
+                hadiah = "Motor honda";
+                break;
+            case "3":
+                hadiah = "tiket hiburan ke bali";
+                break;
+            case "4":
+                hadiah = "tiket makan makan";
+                break;
+            case "5":
+                hadiah = "Uang 5 Juta Rupiah";
+                break;
+            case "6":
+                hadiah = "Uang 3 Juta Rupiah";
+                break;
+            case "7":
+                hadiah = "Uang 1 Juta Rupiah";
+                break;
+            case "8":
+                hadiah = "Uang 750 Ribu Rupiah";
+                break;
+            case "9":
+                hadiah = "Uang 500 Rupiah Rupiah";
+                break;
+            case "10":
+                hadiah = "Uang 250 RIbu Rupiah";
+                break;
+            default:
+                document.write("<p>Opps! anda Gagal Menebak Angka</p>");
+        }
+
+        if(hadiah === ""){
+            document.write("<p>Kamu gagal mendapat hadiah</p>");
+        } else {
+            document.write("<h2>Selamat kamu Berhasil Menebak Angka dan mendapatkan hadiah " + hadiah + "</h2>");
+        }
+    </script>
+</body>
+</html>
