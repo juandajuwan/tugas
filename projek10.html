@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Percabangan switch/case</title>
+</head>
+<body>
+    <script>
+
+        var jawab = prompt("masukkan nilai kamu");
+        var hadiah = "";
+        
+        switch(jawab){
+            case "90":
+                hadiah = "A";
+                break;
+            case "80":
+                hadiah = "B";
+                break;
+            case "70":
+                hadiah = "C";  
+                break;
+            case "60":
+                hadiah = "D";
+                break;
+            case "50":
+                hadiah = "E";
+                break;
+            default:
+                document.write("<p>Opps! anda salah memasukkan nilai</p>");
+        }
+
+        if(hadiah === ""){
+            document.write("<p>nilai yang kamunmasukkan salah</p>");
+        } else {
+            document.write("<h2>Selamat kamu mendapatkan " + hadiah + "</h2>");
+        }
+    </script>
+</body>
+</html>
