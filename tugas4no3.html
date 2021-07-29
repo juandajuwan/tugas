@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Looping Tugas 4</h2>
+
+<p id="demo"></p>
+
+<script>
+const cars = ['Santai', 'Berkuliatas', 'I Love Coding','Berkualitas', 'Santai','Berkuliatas', 'Santai', 'Berkualitas','I Love Coding','Berkualitas', 'Santai','Berkualitas', 'Santai','Berkualitas', 'I Love Coding',,'Berkualitas', 'Santai','Berkualitas', 'Santai','Berkualitas'];
+
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += i + cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
